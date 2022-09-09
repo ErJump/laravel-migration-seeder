@@ -1,4 +1,4 @@
-<div class="card col-6">
+<div class="card col-5">
     <div class="card-header">
         <strong>{{$train->train_code}}</strong> - {{$train->company}}
     </div>

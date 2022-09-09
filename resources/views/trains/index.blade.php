@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="{{asset("css/app.css")}}">
 </head>
 <body>
-    <main>
-        <h1>Trains:</h1>
-        <div class="row">
-            @foreach ($trains as $train)
-                @include('includes.train-card', ['train' => $train])
-            @endforeach
+    <main class="py-5">
+        <div class="container-lg">
+            <h1 class="mb-4">Trains:</h1>
+            <div class="row gap-3">
+                @foreach ($trains as $train)
+                    @include('includes.train-card', ['train' => $train])
+                @endforeach
+            </div>
         </div>
     </main>
 </body>
