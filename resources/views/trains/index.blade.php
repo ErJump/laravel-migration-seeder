@@ -10,13 +10,11 @@
 <body>
     <main>
         <h1>Trains:</h1>
-        <ul>
+        <div class="row">
             @foreach ($trains as $train)
-                <li>
-                    {{ $train->company }}
-                </li>
+                @include('includes.train-card', ['train' => $train])
             @endforeach
-        </ul>
+        </div>
     </main>
 </body>
 </html>
